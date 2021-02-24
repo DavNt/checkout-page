@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+.header h1{
+    font-weight: 600;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+}
+
+.fbody{
+    display: flex;
+}
+
+.contact_info h2{
+    font-weight: 600;
+    color: #333333;
+    transform: rotate(-0.02deg);
+}
+
+.contact_info p, .part p, .partb p{
+    font-weight: 600;
+    color: #4F4F4F;
+    transform: rotate(-0.02deg);
+}
+
+/* form with icon start */
+.input_icon i { 
+    position: absolute; 
+} 
+  
+.input_icon { 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 10px; 
+    text-align: center; 
+} 
+  
+.input_field { 
+    font-weight: 600;
+    color: #828282;
+    padding: 10px; 
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px; 
+}
+
+.side_input{
+    display: flex;
+}
+
+/* form with icon end */
+
+.checking_span{
+    font-weight: 600;
+    color: #4F4F4F;
+    transform: rotate(-0.02deg);
+}
+
+.submit_btn input{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #F2994A;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.submit_btn input :visited{
+    border: silver;
+}
+.submit_btn input :hover{
+    background-color: rgb(218, 108, 12);
+}
+
+.cart_products{
+    background: #F2F2F2;
+    border-radius: 12px;
+}
+
+.cart_item{
+    display: flex;
+    flex-direction: row;
+}
+
+.item_pic img{
+    border-radius: 12px;
+}
+
+.item_descrip p{
+    margin-top: -8px;
+}
+
+.item_descrip p .cost{
+    color: #F2994A;
+}
+
+.count {
+    text-align: center;
+    background: #E0E0E0;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.item_descrip h3, .cost, .item_count, .prev_cost{
+    font-weight: 600;
+    color: #4E5150;
+    transform: rotate(-0.02deg);
+}
+
+.prev_cost{
+    text-decoration-line: line-through;
+    margin-left: 8px;
+}
+
+.item_count{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.payments{
+    font-weight: 600;
+    color: #333333;
+}
+
+hr{
+    border: 1px solid #BDBDBD;
+    transform: rotate(-0.18deg);
+}
+
+.pay_type{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -6px;
+    margin-bottom: -6px;
+}
+
+footer{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 90px;
+    text-align: center;
+    color: #BDBDBD;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header h1{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .fbody{
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    .details{
+        order: 2;
+        width: 300px;
+    }
+
+    .contact_info h2{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .contact_info p, .part p, .partb p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    /* form with icon start */
+    .input_icon { 
+        width: 290px; 
+        margin-bottom: 10px; 
+    } 
+      
+    .icon { 
+        min-width: 15px; 
+    } 
+      
+    .input_field { 
+        font-size: 12px;
+        line-height: 15px;    
+        width: 290px; 
+        padding: 10px; 
+        text-indent: 21px;
+    }
+    
+    .side_input{
+        width: 290px;
+    }
+    
+    .part, .partb{
+        width: 145px;
+    }
+    
+    .partb{
+        margin-left: 5px;
+    }
+    
+    .side{
+        width: 140px;
+    }
+    
+    /* form with icon end */
+     
+    .shipping{
+        margin-top: 50px;
+    }
+
+    .checking_span{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    .check{
+        width: 15px;
+        height: 15px;
+    }
+
+    .submit_btn input{
+        width: 166px;
+        height: 54px;
+        margin-top: 30px;
+        margin-left: 120px;
+    }
+
+    .cart_products{
+        order: 1;
+        width: 300px;
+        height: 400px;
+    }
+
+    .cart_item{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .item_details{
+        margin-left: 15px;
+        margin-top: -8px;
+    }
+
+    .item_descrip h3, .cost, .item_count{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .prev_cost{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .item_count{
+        width: 100px;
+        height: 35px;
+    }
+
+    .count {
+        width: 18px;
+        height: 18px;
+    }
+
+    .item_pic img{
+        width: 95px;
+        height: 95px;
+    }
+
+    .payments{
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 60px;
+    }
+
+    hr{
+        width: 266px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+    .header h1{
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .fbody{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .details{
+        order: 1;
+        width: 350px;
+    }
+
+    .contact_info h2{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    
+    .contact_info p, .part p, .partb p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    /* form with icon start */
+    .input_icon { 
+        width: 290px; 
+        margin-bottom: 10px; 
+    } 
+      
+    .icon { 
+        min-width: 15px; 
+    } 
+      
+    .input_field { 
+        font-size: 12px;
+        line-height: 15px;    
+        width: 290px; 
+        padding: 10px; 
+        text-indent: 22px;
+    }
+    
+    .side_input{
+        width: 290px;
+    }
+    
+    .part, .partb{
+        width: 145px;
+    }
+    
+    .partb{
+        margin-left: 5px;
+    }
+    
+    .side{
+        width: 140px;
+    }
+    
+    /* form with icon end */
+     
+    .shipping{
+        margin-top: 50px;
+    }
+
+    .checking_span{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    .check{
+        width: 15px;
+        height: 15px;
+    }
+
+    .submit_btn input{
+        width: 166px;
+        height: 54px;
+        margin-top: 30px;
+        margin-left: 120px;
+    }
+
+    .cart_products{
+        order: 2;
+        width: 300px;
+        height: 400px;
+    }
+
+    .cart_item{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .item_details{
+        margin-left: 15px;
+        margin-top: -8px;
+    }
+
+    .item_descrip h3, .cost, .item_count{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .prev_cost{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .item_count{
+        width: 100px;
+        height: 35px;
+    }
+
+    .count {
+        width: 18px;
+        height: 18px;
+    }
+
+    .item_pic img{
+        width: 95px;
+        height: 95px;
+    }
+
+    .payments{
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 60px;
+    }
+
+    hr{
+        width: 266px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up)  */
+@media only screen and (min-width: 992px) {
+    .header h1{
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 60px;
+        margin-left: 225px;
+    }
+    
+    .fbody{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .details{
+        order: 1;
+        width: 500px;
+    }
+
+    .contact_info h2{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .contact_info p, .part p, .partb p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    /* form with icon start */
+    .input_icon { 
+        width: 500px; 
+        margin-bottom: 10px; 
+    } 
+      
+    .icon { 
+        min-width: 25px; 
+    } 
+      
+    .input_field { 
+        font-size: 16px;
+        line-height: 20px;    
+        width: 400px; 
+        padding: 10px; 
+        text-indent: 27px;
+    }
+    
+    .side_input{
+        width: 400px;
+    }
+    
+    .part, .partb{
+        width: 200px;
+    }
+    
+    .partb{
+        margin-left: 10px;
+    }
+    
+    .side{
+        width: 190px;
+    }
+    
+    /* form with icon end */
+     
+    .shipping{
+        margin-top: 50px;
+    }
+
+    .checking_span{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .submit_btn input{
+        width: 166px;
+        height: 54px;
+        margin-top: 30px;
+        margin-left: 234px;
+    }
+    
+    .cart_products{
+        order: 2;
+        width: 380px;
+        height: 535px;
+    }
+
+    .cart_item{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .item_details{
+        margin-left: 25px;
+    }
+
+    .item_descrip h3, .cost, .item_count{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .prev_cost{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .item_count{
+        width: 134px;
+        height: 52px;
+    }
+
+    .count {
+        width: 21px;
+        height: 21px;
+    }
+
+    .item_pic img{
+        width: 135px;
+        height: 135px;
+    }
+
+    .payments{
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 70px;
+    }
+
+    hr{
+        width: 340px;
+    }
+    
+}

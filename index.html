@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+
+  <link rel="shortcut icon" type="image/x-icon" href="./img/devchallenges.png"/>
+
+  <title>Checkout Page</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Checkout</h1>
+  </div>
+  <div class="fbody">
+    <div class="details">
+      <form action="" onsubmit="alrtFunction()">
+        <div class="contact_info">
+          <h2>Contact information</h2>
+
+          <p>E-mail</p>
+          <div class="input_icon"> 
+            <i><img class="icon" src="./img/ic_mail.png" alt=""></i> 
+            <input class="input_field" type="email" 
+            placeholder="Enter your email.." required>
+          </div>
+          <p>Phone</p>
+          <div class="input_icon"> 
+            <i><img class="icon" src="./img/ic_local_phone_18pt.png" alt=""></i> 
+            <input class="input_field" type="tel" 
+            placeholder="Enter your phone.." required>
+          </div>
+        </div>
+        
+        <div class="contact_info shipping">
+          <h2>Shipping address</h2>
+
+          <p>Full name</p>
+          <div class="input_icon"> 
+            <i><img class="icon" src="./img/ic_person_18pt.png" alt=""></i> 
+            <input class="input_field" type="text" 
+            placeholder="Your name.." required>
+          </div>
+          <p>Address</p>
+          <div class="input_icon"> 
+            <i><img class="icon" src="./img/ic_home_18pt.png" alt=""></i> 
+            <input class="input_field" type="text" 
+            placeholder="Your address.." required>
+          </div>
+          <p>City</p>
+          <div class="input_icon"> 
+            <i><img class="icon" src="./img/ic_location_city.png" alt=""></i> 
+            <input class="input_field" type="text" 
+            placeholder="Your city.." required>
+          </div>
+
+          <div class="side_input">
+            <div class="part">
+              <p>Country</p>
+              <div class="input_icon"> 
+                <i><img class="icon" src="./img/earth1.png" alt=""></i> 
+                <select name="country" class="input_field side" required>
+                  <option value="" disabled selected>Your country.</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Mozambique">Botswana</option>
+                </select>
+              </div>
+            </div>
+            <div class="partb">
+              <p>Postal code</p>
+              <div class="input_icon"> 
+                <i><img class="icon" src="./img/ic_markunread_mailbox.png" alt=""></i> 
+                <input class="input_field side" type="number" 
+                placeholder="Your postal.." required>
+              </div>
+            </div>
+          </div>
+          <div class="checking_span">
+            <input type="checkbox" class="check"> Save this information for next time
+          </div>
+          <div class="submit_btn">
+            <input type="submit" value="Continue">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="cart_products">
+      <div class="cart_item">
+        <div class="item_pic">
+          <img src="./img/photo1.png" alt="">
+        </div>
+        <div class="item_details">
+          <div class="item_descrip">
+            <h3>Vintage Backbag</h3>
+            <p>
+              <span class="cost">$50.50</span>
+              <span class="prev_cost">$70.00</span>
+            </p>
+          </div>
+          <div class="item_count">
+            <button class="count" onclick="remove(this)">-</button>
+            <p class="count_no">1</p>
+            <button class="count" onclick="add(this)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart_item">
+        <div class="item_pic">
+          <img src="./img/photo2.png" alt="">
+        </div>
+        <div class="item_details">
+          <div class="item_descrip">
+            <h3>Levi Shoes</h3>
+            <p>
+              <span class="cost">$20.50</span>
+              <span class="prev_cost">$32.20</span>
+            </p>
+          </div>
+          <div class="item_count">
+            <button class="count" onclick="remove(this)">-</button>
+            <p class="count_no">1</p>
+            <button class="count" onclick="add(this)">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="payments">
+        <hr>
+        <div class="pay_type">
+          <p>Shipping</p>
+          <p class="ship_cost">$19</p>
+        </div>
+        <hr>
+        <div class="pay_type">
+          <p>Total</p>
+          <p class="ship_cost">$90.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created by David Nt @ devchallenges.io</p>
+  </footer>
+
+  <script>
+    function alrtFunction() {
+      alert("The form was submitted");
+    }
+
+    function remove(e) {
+      e.parentNode.children[1].innerHTML > 0
+        ? (e.parentNode.children[1].innerHTML =
+        Number(e.parentNode.children[1].innerHTML) - 1)
+        : (e.parentNode.children[1].innerHTML = 0);
+      console.log(e.parentNode.children[1].innerHTML);
+    }
+
+    function add(e) {
+      e.parentNode.children[1].innerHTML =
+      Number(e.parentNode.children[1].innerHTML) + 1;
+      console.log(e.parentNode.children[1].innerHTML);
+    }
+  </script>
+</body>
+</html>
